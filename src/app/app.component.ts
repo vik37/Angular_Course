@@ -8,9 +8,9 @@ import {Course} from 'src/app/model/course';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  coreCourse: Course = COURSES[0];
-  rxjsCourse: Course = COURSES[1];
-  ngrxCourse: Course = COURSES[2];
+
+  courses = COURSES;
+  
 
   onCourseSelected(course: Course){
     console.log('card clicked ' +  course.category)
